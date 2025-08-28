@@ -1,4 +1,4 @@
-# Proyecto_Def_Equipo1
+-# MNIST-Neural-Network
 
 Este proyecto implementa una red neuronal para reconocimiento de dígitos.
 
@@ -37,5 +37,6 @@ mvn exec:java -Dexec.mainClass="Vista.Inicio"
 
 ## Licencia
 [MIT](LICENSE)
+
 
 
