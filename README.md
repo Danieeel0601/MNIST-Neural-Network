@@ -1,4 +1,4 @@
--# MNIST-Neural-Network
+# MNIST-Neural-Network
 
 Este proyecto implementa una red neuronal para reconocimiento de dígitos.
 
@@ -30,6 +30,10 @@ java -cp target/Proyecto_Def_Equipo1-1.0-SNAPSHOT.jar Vista.Inicio
 mvn clean package
 mvn exec:java -Dexec.mainClass="Vista.Inicio"
 ```
+Si deseas entrenar la red neuronal con diferentes iteraciones o muestras, cambia el segundo comando por el siguiente después de compilar: 
+```sh
+mvn exec:java -Dexec.mainClass="Neuralnetwork.Backpropagation"
+```
 
 ## Notas
 - El archivo `Neuronas.dat` es necesario para la ejecución inicial del programa.
@@ -37,6 +41,7 @@ mvn exec:java -Dexec.mainClass="Vista.Inicio"
 
 ## Licencia
 [MIT](LICENSE)
+
 
 
 
