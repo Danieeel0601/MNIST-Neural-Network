@@ -10,24 +10,22 @@ public class Backpropagation {
     
     public static void main(String[] args) throws IOException {
         //Se lee un archivo con imagenes y un archivo con etiquetas de entrenamiento
-        MnistMatrix mnistMatrix = new MnistDataReader().readData(6000, "data/train-images.idx3-ubyte", "data/train-labels.idx1-ubyte");
+        MnistMatrix mnistMatrix = new MnistDataReader().readData(15000, "data/train-images.idx3-ubyte", "data/train-labels.idx1-ubyte");
         //Print 
         printMnistMatrix(mnistMatrix);
         double alpha = 0.1;
  
-        //Se lee un archivo con imagenes de entrenamiento y sus etiquetas 
-        gradient_descent(mnistMatrix, alpha , 3000, neurons);
+        //Se especifica el numero de repeticiones y se ejecuta descenso del gradiente para entrenamiento 
+        gradient_descent(mnistMatrix, alpha , 700, neurons);
         Scanner scanner = new Scanner(System.in); 
         
         System.out.println("La red esta entrenada, presione enter para probar en un nuevo set de datos");
         scanner.nextLine();
-        
+        //se prueba la redd con diferentes datos
         mnistMatrix = new MnistDataReader().readData(500, "data/t10k-images.idx3-ubyte", "data/t10k-labels.idx1-ubyte");
         test(mnistMatrix, neurons); 
-        System.out.println("Guardar?");
-        if (scanner.nextLine().equals("1")){
-            BDwrite("Neuronas.dat");
-        }
+        BDwrite("Neuronas.dat");
+        
         
     }
     
@@ -126,7 +124,7 @@ public class Backpropagation {
 //           Se imprimen resultados cada 10 iteraciones
             if (i % 10 == 0){
                 System.out.println("Iteration: " + (i+1));
-                System.out.println("Prediction: " + getPredictions(A2)[i % 1000]);
+                //System.out.println("Prediction: " + getPredictions(A2)[i % 1000]);
                 System.out.println("Accuracy: " + getAccuracy(getPredictions(A2), dataset.getLabelVector()) + "%");
 
             }
@@ -173,8 +171,8 @@ public class Backpropagation {
         int correct = 0; // Contador para predicciones correctas
 
         // Imprimir las predicciones y los valores reales (similar a print en Python)
-        System.out.println("Predictions: " + Arrays.toString(predictions));
-        System.out.println("Y: " + Arrays.toString(Y));
+        //System.out.println("Predictions: " + Arrays.toString(predictions));
+        //System.out.println("Y: " + Arrays.toString(Y));
 
         // Contar cuántas predicciones coinciden con Y
         for (int i = 0; i < predictions.length; i++) {
