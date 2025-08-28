@@ -24,6 +24,7 @@ Asegúrate de tener Java instalado. Ejecuta:
 ```sh
 java -cp target/Proyecto_Def_Equipo1-1.0-SNAPSHOT.jar Vista.Inicio
 ```
+¡Dibuja bien tus números para que la red trabaje mejor! Es una red pequeña, puede fallar constantemente sus predicciones. 
 
 ### Compilar y ejecutar con Maven
 ```sh
@@ -41,6 +42,7 @@ mvn exec:java -Dexec.mainClass="Neuralnetwork.Backpropagation"
 
 ## Licencia
 [MIT](LICENSE)
+
 
 
 
