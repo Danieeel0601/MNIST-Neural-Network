@@ -106,16 +106,14 @@ public class FrmPixelPaintApp extends JPanel {
             }
             repaint(); // Repinta el área de dibujo
             
-            Backpropagation.printMatrix(Inicio.input);
-             System.out.println("comienza backprop");
-            
+
             Matrix X = Inicio.input;
 
             Matrix Z1 = Inicio.neurons.get(0).Dot(X).SumVector(Inicio.neurons.get(1));     
             Matrix A1 = Z1.ReLU();
             Matrix Z2 = Inicio.neurons.get(2).Dot(A1).SumVector(Inicio.neurons.get(3)); 
             Matrix A2 = Z2.Softmax(); 
-             System.out.println("Terminado");
+
             
             int[] predictionVector = Backpropagation.getPredictions(A2);
 
