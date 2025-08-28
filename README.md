@@ -1,26 +1,26 @@
 # Proyecto_Def_Equipo1
 
-Este proyecto implementa una red neuronal para reconocimiento de d韌itos.
+Este proyecto implementa una red neuronal para reconocimiento de d铆gitos.
 
 ## Requisitos
-- Java 8 o superior
-- Maven (solo si deseas compilar desde el c骴igo fuente)
+- Java 22 o superior
+- Maven (solo si deseas compilar desde el c贸digo fuente)
 
 ## Estructura
-- C骴igo fuente: `src/main/java`
-- Datos para entrenamiento/modificaci髇: `data/`
-- Archivo principal para ejecuci髇: `Neuronas.dat`
+- C贸digo fuente: `src/main/java`
+- Datos para entrenamiento/modificaci贸n: `data/`
+- Archivo principal para ejecuci贸n: `Neuronas.dat`
 - JAR compilado: `target/Proyecto_Def_Equipo1-1.0-SNAPSHOT.jar`
 
-## Instalaci髇
+## Instalaci贸n
 Clona el repositorio:
 ```sh
 git clone https://github.com/tu-usuario/Proyecto_Def_Equipo1.git
 cd Proyecto_Def_Equipo1
 ```
 
-### Ejecuci髇 r醦ida (sin Maven)
-Aseg鷕ate de tener Java instalado. Ejecuta:
+### Ejecuci贸n r谩pida (sin Maven)
+Aseg煤rate de tener Java instalado. Ejecuta:
 ```sh
 java -cp target/Proyecto_Def_Equipo1-1.0-SNAPSHOT.jar Vista.Inicio
 ```
@@ -32,8 +32,9 @@ mvn exec:java -Dexec.mainClass="Vista.Inicio"
 ```
 
 ## Notas
-- El archivo `Neuronas.dat` es necesario para la ejecuci髇 inicial del programa.
+- El archivo `Neuronas.dat` es necesario para la ejecuci贸n inicial del programa.
 - La carpeta `data/` contiene archivos para modificar o reentrenar la red neuronal (opcional para usuarios avanzados).
 
 ## Licencia
 [MIT](LICENSE)
+
