@@ -10,7 +10,7 @@ Este proyecto implementa una red neuronal para reconocimiento de dígitos.
 - Código fuente: `src/main/java`
 - Datos para entrenamiento/modificación: `data/`
 - Archivo principal para ejecución: `Neuronas.dat`
-- JAR compilado: `target/Proyecto_Def_Equipo1-1.0-SNAPSHOT.jar`
+
 
 ## Instalación
 Clona el repositorio:
@@ -22,7 +22,7 @@ cd MNIST-Neural-Network
 ### Ejecución rápida (sin Maven)
 Asegúrate de tener Java instalado. Ejecuta:
 ```sh
-java -cp target/Proyecto_Def_Equipo1-1.0-SNAPSHOT.jar Vista.Inicio
+java -cp target/classes Vista.Inicio
 ```
 ¡Dibuja bien tus números para que la red trabaje mejor! Es una red pequeña, puede fallar constantemente sus predicciones. 
 
@@ -42,6 +42,7 @@ mvn exec:java -Dexec.mainClass="Neuralnetwork.Backpropagation"
 
 ## Licencia
 [MIT](LICENSE)
+
 
 
 
