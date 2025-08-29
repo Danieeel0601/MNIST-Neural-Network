@@ -150,7 +150,7 @@ public class FrmPixelPaintApp extends JPanel {
             try{
                  //if(gridY>=0||gridX>=0||gridX<=27||gridY<=27)pixels[gridX][gridY-1] = Color.BLACK; // Set to black for now
                 if(gridY>=0||gridX>=0||gridX<=27||gridY<=27)pixels[gridX][gridY] = Color.BLACK; // Set to black for now
-                //if(gridY>=0)pixels[gridX][gridY+1] = Color.BLACK; // Set to black for now
+                if(gridY>=0)pixels[gridX][gridY+1] = Color.BLACK; // Set to black for now
                 if(gridY<=27)pixels[gridX][gridY-1] = Color.BLACK; // Set to black for now
                 if(gridX>=0)pixels[gridX+1][gridY] = Color.BLACK; // Set to black for now
                 //if(gridX<=27)pixels[gridX-1][gridY] = Color.BLACK; // Set to black for now
