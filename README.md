@@ -15,7 +15,7 @@ Este proyecto implementa una red neuronal para reconocimiento de dígitos.
 ## Instalación
 Clona el repositorio:
 ```sh
-git clone https://github.com/tu-usuario/MNIST-Neural-Network.git
+git clone https://github.com/Danieeel0601/MNIST-Neural-Network.git
 cd MNIST-Neural-Network
 ```
 
@@ -42,6 +42,7 @@ mvn exec:java -Dexec.mainClass="Neuralnetwork.Backpropagation"
 
 ## Licencia
 [MIT](LICENSE)
+
 
 
 
